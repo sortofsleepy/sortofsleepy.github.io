@@ -154,7 +154,7 @@ var Background = (function () {
         positionsTexture.generateMipmaps = false;
         positionsTexture.needsUpdate = true;
 
-        var geometry = new THREE.IcosahedronGeometry(150, 1);
+        var geometry = new THREE.IcosahedronGeometry(250, 1);
 
         var material = new THREE.MeshBasicMaterial({
             color: 0 });
@@ -743,7 +743,7 @@ var PCloud = (function (_Composer) {
          material.uniforms.opacity.value = 1.0;
          this.program = material;*/
 
-        this.addPass("curl", "#define GLSLIFY 1\n\n uniform float opacity;\n\n\t\t\t uniform sampler2D tPositions;\n\t\t\t uniform sampler2D tOrigins;\n\n\t\t\t uniform float timer;\n\n\t\t\t varying vec2 vUv;\n\n\t\t\t float rand(vec2 co){\n                 return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);\n\t\t\t }\n\n\t\t\t void main() {\n\n\t\t\t \tvec4 pos = texture2D( tPositions ,vUv );\n        vec4 oPos = texture2D( tOrigins ,vUv );\n\n\n\t\t\t \tif ( rand( vUv + timer ) > 0.99 || pos.w <= 0.0 ) {\n\n\t\t\t \t\tpos.xyz = texture2D( tOrigins ,vUv ).xyz;\n\t\t\t \t\tpos.w = opacity;\n\n\t\t\t \t} else {\n\n\t\t\t \t\tif ( pos.w <= 0.0 ) discard;\n\n\t\t\t \t\tfloat x = pos.x + timer * 5.0;\n\t\t\t \t\tfloat y = pos.y;\n\t\t\t \t\tfloat z = pos.z + timer * 4.0;\n\n\t\t\t \t\tpos.x += sin( y * 0.033 ) * cos( z * 0.037 ) * 0.4;\n\t\t\t \t\tpos.y += sin( x * 0.035 ) * cos( x * 0.035 ) * 0.4;\n\t\t\t \t\tpos.z += sin( x * 0.037 ) * cos( y * 0.033 ) * 0.4;\n\t\t\t \t\tpos.w -= 0.00001;\n\n\t\t\t \t}\n\n\t\t\t \tgl_FragColor = pos;\n\n\t\t\t }\n", {
+        this.addPass("curl", "#define GLSLIFY 1\n\n uniform float opacity;\n\n\t\t\t uniform sampler2D tPositions;\n\t\t\t uniform sampler2D tOrigins;\n\n\t\t\t uniform float timer;\n\n\t\t\t varying vec2 vUv;\n\n\t\t\t float rand(vec2 co){\n                 return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);\n\t\t\t }\n\n\t\t\t void main() {\n\n\t\t\t \tvec4 pos = texture2D( tPositions ,vUv );\n        vec4 oPos = texture2D( tOrigins ,vUv );\n\n\n\t\t\t \tif ( rand( vUv + timer ) > 0.99 || pos.w <= 0.0 ) {\n\n\t\t\t \t\tpos.xyz = texture2D( tOrigins ,vUv ).xyz;\n\t\t\t \t\tpos.w = opacity;\n\n\t\t\t \t} else {\n\n\t\t\t \t\tif ( pos.w <= 0.0 ) discard;\n\n\t\t\t \t\tfloat x = pos.x + timer * 5.0;\n\t\t\t \t\tfloat y = pos.y;\n\t\t\t \t\tfloat z = pos.z + timer * 4.0;\n\n\t\t\t \t\tpos.x += sin( y + 0.033 ) * cos( z * 0.037 ) * 0.5;\n\t\t\t \t\tpos.y += sin( x + 0.035 ) * cos( x * 0.035 ) * 0.5;\n\t\t\t \t\tpos.z += sin( x + 0.037 ) * cos( y * 0.033 ) * 0.5;\n\t\t\t \t\tpos.w -= 0.00001;\n\n\t\t\t \t}\n\n\t\t\t \tgl_FragColor = pos;\n\n\t\t\t }\n", {
             tPositions: { type: "t", value: null, destination: true },
             tOrigins: { type: "t", value: null },
             opacity: { type: "f", value: 1 },
