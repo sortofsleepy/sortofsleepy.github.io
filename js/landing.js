@@ -95,6 +95,9 @@ if (Detect.isMobileOS()) {
         name: "Vsco",
         url: "http://sortofsleepy.vsco.co"
     }, {
+        name: "Vine",
+        url: "http://vine.co/Joe.Chow"
+    }, {
         name: "Old (very tiny) site",
         url: "http://xoio.co"
     }];
