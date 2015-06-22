@@ -5,37 +5,71 @@
     <title></title>
 
     <link rel="stylesheet" href="../css/main.css"/>
+
+    <style>
+        #titles div{
+            font-size:12px;
+            font-weight:100;
+            line-height:25px;
+        }
+
+        #navs{
+            margin-left:50px;
+        }
+
+        #navs a{
+            font-size:18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color:#333;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        #navs a:hover{
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            color:teal;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <div id="title">
-        <div class="component"><h1>Kiss</h1></div>
-        <div class="component"><h1>Hug</h1></div>
-        <div class="component"><h1>Input/</h1></div>
-        <div class="component"><h1>Output</h1></div>
-    </div>
-
-
-    <!-- extracted into Menu class -->
-    <div id="nav" style="display: none;">
-        <div class="menu-link" data-name="about" data-url="/about">
-            <span>About</span>
-        </div>
-        <div class="menu-link" data-name="work" data-url="/work">
-            <span>Work</span>
-        </div>
-        <div class="menu-link" data-name="experiments" data-url="/experiments">
-            <span>Experiments</span>
-        </div>
+    <div id="titles">
+        <div class="components"><h1>Kiss</h1></div>
+        <div class="components"><h1>Hug</h1></div>
+        <div class="components"><h1>Input/</h1></div>
+        <div class="components"><h1>Output</h1></div>
     </div>
 </header>
 
+<!-- extracted into Menu class -->
+<div id="navs">
+    <div class="menu-links">
+        <a href="/experiments/birds">Birds</a>
+    </div>
+    <div class="menu-links">
+        <a href="/experiments/waves">Waves</a>
+    </div>
+    <div class="menu-links">
+        <a href="/experiments/particles">Particles</a>
+    </div>
+
+    <div class="menu-links">
+        <a href="/experiments/glslemitter/emiter.zip">GLSL emitter(note: Cinder app - will have to download)</a>
+    </div>
+</div>
+
 <div id="SITE" style="z-index: 999"></div>
+
+
 
 <script src="//use.typekit.net/jdi6yuy.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
-
 
 <!-- Piwik -->
 <script type="text/javascript">

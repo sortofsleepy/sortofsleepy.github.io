@@ -100,6 +100,9 @@ if (Detect.isMobileOS()) {
     }, {
         name: "Old (very tiny) site",
         url: "http://xoio.co"
+    }, {
+        name:"Random experiments",
+        url:"/experiments"
     }];
     var linkList = document.createElement("ul");
     linkList.id = "link-list";

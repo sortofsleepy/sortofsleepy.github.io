@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43140165-6c97-470c-b9b3-948f4215103f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/index.html" afterPath="$PROJECT_DIR$/experiments/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/landing.js" afterPath="$PROJECT_DIR$/js/landing.js" />
     </list>
     <ignored path="sortofsleepy.github.io.iws" />
@@ -44,24 +44,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landing.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="landing.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/landing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.08">
-              <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5724907">
+              <caret line="105" column="5" selection-start-line="102" selection-start-column="7" selection-end-line="105" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiments/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.111386135">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#p#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -95,8 +94,8 @@
       <list>
         <option value="$PROJECT_DIR$/experiments/birds/index.html" />
         <option value="$PROJECT_DIR$/experiments/particles/js/App.js" />
-        <option value="$PROJECT_DIR$/js/landing.js" />
         <option value="$PROJECT_DIR$/experiments/index.html" />
+        <option value="$PROJECT_DIR$/js/landing.js" />
       </list>
     </option>
   </component>
@@ -108,7 +107,7 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="129" />
+    <option name="x" value="475" />
     <option name="y" value="23" />
     <option name="width" value="1791" />
     <option name="height" value="950" />
@@ -184,6 +183,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sortofsleepy.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sortofsleepy.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GLSLEmitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -238,7 +255,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="129" y="23" width="1791" height="950" extended-state="0" />
+    <frame x="475" y="23" width="1791" height="950" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -284,14 +301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/landing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.08">
-          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0">
@@ -302,13 +311,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiments/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.111386135">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#p#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/landing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5724907">
+          <caret line="105" column="5" selection-start-line="102" selection-start-column="7" selection-end-line="105" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
