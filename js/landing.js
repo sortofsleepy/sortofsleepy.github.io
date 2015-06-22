@@ -79,7 +79,7 @@ if (Detect.isMobileOS()) {
 } else {
     var message = document.createElement("h3");
     message.id = "desktop-message";
-    message.innerHTML = "Joseph Chow is a developer currently residing in the San Francisco Bay Area." + " I'm currently open to new opportunities, though outside of the product/start-up space. Always happy to travel and see new places." + " As you might have noticed, I don't exactly have a portfolio at the moment, but here are some links you can check out in the meantime while I rebuild the darn thing.";
+    message.innerHTML = "Joseph Chow is a developer currently residing in the San Francisco Bay Area." + " I'm currently open to new opportunities, though outside of the product/start-up space. Always happy to travel and see new places." + " As you might have noticed, I don't exactly have a portfolio at the moment, but here are some links you can check out in the meantime while I struggle to find the time and rebuild the darn thing.";
 
     site.appendChild(message);
     var links = [{
@@ -100,9 +100,6 @@ if (Detect.isMobileOS()) {
     }, {
         name: "Old (very tiny) site",
         url: "http://xoio.co"
-    }, {
-        name:"Random experiments",
-        url:"/experiments"
     }];
     var linkList = document.createElement("ul");
     linkList.id = "link-list";
